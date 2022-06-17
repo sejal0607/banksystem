@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/createuser.css">
 </head>
 
-<body style="background-color : #82E0AA;">
+<body style="background-color : #add8e6">
 <?php
     include 'config.php';
     if(isset($_POST['submit'])){
@@ -20,7 +20,7 @@
     $sql="insert into users(name,email,balance) values('{$name}','{$email}','{$balance}')";
     $result=mysqli_query($conn,$sql);
     if($result){
-               echo "<script> alert('Hurray! User created');
+               echo "<script> alert('User created');
                                window.location='transfermoney.php';
                      </script>";
                     
